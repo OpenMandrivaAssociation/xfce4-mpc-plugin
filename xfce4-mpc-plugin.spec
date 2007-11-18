@@ -6,9 +6,9 @@ License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-mpc-plugin
 Source0: 	http://goodies.xfce.org/releases/xfce4-mpc-plugin/%{name}-%{version}.tar.bz2
-Requires:	xfce-panel >= 4.4
-BuildRequires:	xfce-panel-devel >= 4.4
-BuildRequires:	libxfcegui4-devel
+Requires:	xfce4-panel >= 4.4.2
+BuildRequires:	xfce4-panel-devel >= 4.4.2
+BuildRequires:	libxfcegui4-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	libmpd-devel
 Requires:	mpd
@@ -27,8 +27,6 @@ Features :
 * configurable MPD host/port/password
 * toggles repeat/random features in the right-click menu
 * launch configurable client (gmpc, xterm -e ncmpc,..) through right-click menu
-                                                                                
-                                                                                
 
 %prep
 %setup -q
@@ -51,4 +49,3 @@ rm -rf %{buildroot}
 %doc ChangeLog AUTHORS README
 %{_libdir}/xfce4/panel-plugins/*
 %{_datadir}/xfce4/panel-plugins/xfce4-mpc-plugin.desktop
-      
