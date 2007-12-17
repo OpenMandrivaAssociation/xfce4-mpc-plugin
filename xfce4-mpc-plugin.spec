@@ -13,7 +13,6 @@ BuildRequires:	perl(XML::Parser)
 BuildRequires:	libmpd-devel
 Requires:	mpd
 Obsoletes:	xfce-mpc-plugin
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This is a simple Xfce panel client plugin for Music Player Daemon.
