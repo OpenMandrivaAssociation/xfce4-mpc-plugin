@@ -20,10 +20,13 @@ This is a simple Xfce panel client plugin for Music Player Daemon.
 
 Features :
 * send Play/Stop/Next/Previous command to MPD
-* uses gtk-theme media icons (at least nuvola, tango and rodent themes provides these icons)
+* uses gtk-theme media icons (at least nuvola, tango and rodent themes provides
+  these icons)
 * decrease/increase volume using the mouse wheel
-* show the current volume, status and title as a tooltip when passing the mouse over the plugin
-* show a simple playlist window upon middle-click, permitting to select a track to play
+* show the current volume, status and title as a tooltip when passing the mouse
+  over the plugin
+* show a simple playlist window upon middle-click, permitting to select a track
+  to play
 * configurable MPD host/port/password
 * toggles repeat/random features in the right-click menu
 * launch configurable client (gmpc, xterm -e ncmpc,..) through right-click menu
