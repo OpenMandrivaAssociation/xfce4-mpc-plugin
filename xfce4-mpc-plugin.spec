@@ -11,6 +11,7 @@ Source0: 	http://archive.xfce.org/src/panel-plugins/xfce4-mpc-plugin/%{url_ver}/
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel >= 4.4.2
+BuildRequires:	exo-devel
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	libmpd-devel
 Requires:	mpd
