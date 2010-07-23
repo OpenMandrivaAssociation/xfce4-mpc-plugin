@@ -2,7 +2,7 @@
 
 Summary: 	A mpc plugin for the Xfce panel
 Name: 		xfce4-mpc-plugin
-Version: 	0.3.4
+Version: 	0.3.5
 Release: 	%mkrel 1
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
