@@ -1,14 +1,13 @@
 %define url_ver %(echo %{version} | cut -c 1-3)
 
-Summary: 	A mpc plugin for the Xfce panel
-Name: 		xfce4-mpc-plugin
-Version: 	0.3.6
-Release: 	%mkrel 1
+Summary:	A mpc plugin for the Xfce panel
+Name:		xfce4-mpc-plugin
+Version:	0.4.2
+Release:	1
 License:	GPLv2+
-Group: 		Graphical desktop/Xfce
+Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-mpc-plugin
-Source0: 	http://archive.xfce.org/src/panel-plugins/xfce4-mpc-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
-Requires:	xfce4-panel >= 4.4.2
+Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-mpc-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel >= 4.4.2
 BuildRequires:	exo-devel
@@ -16,7 +15,6 @@ BuildRequires:	perl(XML::Parser)
 BuildRequires:	libmpd-devel
 Requires:	mpd
 Obsoletes:	xfce-mpc-plugin
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This is a simple Xfce panel client plugin for Music Player Daemon.
@@ -42,16 +40,11 @@ Features :
 %make
 
 %install
-rm -rf %{buildroot}
-%makeinstall_std 
+%makeinstall_std
 
-%find_lang %{name}
-
-%clean
-rm -rf %{buildroot}
+%find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%defattr(-,root,root)
 %doc ChangeLog AUTHORS README
 %{_libdir}/xfce4/panel-plugins/*
 %{_datadir}/xfce4/panel-plugins/xfce4-mpc-plugin.desktop
