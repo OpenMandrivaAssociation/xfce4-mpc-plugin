@@ -42,9 +42,11 @@ Features :
 %install
 %makeinstall_std
 
+find %{buildroot} -name "*.la" -exec rm -rf {} \;
+
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
 %doc ChangeLog AUTHORS README
-%{_libdir}/xfce4/panel-plugins/*
+%{_libdir}/xfce4/panel/plugins/libmpc.so
 %{_datadir}/xfce4/panel-plugins/xfce4-mpc-plugin.desktop
