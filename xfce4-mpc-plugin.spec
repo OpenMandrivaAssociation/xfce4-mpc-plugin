@@ -8,8 +8,8 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-mpc-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-mpc-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
-BuildRequires:	xfce4-panel-devel >= 4.4.2
-BuildRequires:	libxfcegui4-devel >= 4.4.2
+BuildRequires:	xfce4-panel-devel >= 4.9.0
+BuildRequires:	libxfce4ui-devel >= 4.9.0
 BuildRequires:	exo-devel
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	libmpd-devel
