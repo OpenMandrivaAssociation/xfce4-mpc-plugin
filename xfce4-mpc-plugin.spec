@@ -36,17 +36,19 @@ Features :
 %setup -q
 
 %build
-%configure2_5x
+%configure2_5x \
+	--disable-static
+
 %make
 
 %install
 %makeinstall_std
 
-find %{buildroot} -name "*.la" -exec rm -rf {} \;
+find %{buildroot} -name "*.*a" -exec rm -rf {} \;
 
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
 %doc ChangeLog AUTHORS README
 %{_libdir}/xfce4/panel/plugins/libmpc.so
-%{_datadir}/xfce4/panel-plugins/xfce4-mpc-plugin.desktop
+%{_datadir}/xfce4/panel/plugins/xfce4-mpc-plugin.desktop
