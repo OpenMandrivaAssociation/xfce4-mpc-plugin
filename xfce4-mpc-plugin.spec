@@ -1,15 +1,16 @@
 %define url_ver %(echo %{version} | cut -c 1-3)
+%define _disable_rebuild_configure 1
 
 Summary:	A mpc plugin for the Xfce panel
 Name:		xfce4-mpc-plugin
-Version:	0.4.4
-Release:	5
+Version:	0.5.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-mpc-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-mpc-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
-BuildRequires:	xfce4-panel-devel >= 4.9.0
-BuildRequires:	pkgconfig(libxfce4ui-1) >= 4.9.0
+BuildRequires:	pkgconfig(libxfce4panel-2.0)
+BuildRequires:	pkgconfig(libxfce4ui-2) >= 4.9.0
 BuildRequires:	exo-devel
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig(libmpd)

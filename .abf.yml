@@ -1,3 +1,4 @@
-
-sources:
+removed_sources:
   xfce4-mpc-plugin-0.4.4.tar.bz2: a6dc0f97f689c863af6e166189d60b27af9285f7
+sources:
+  xfce4-mpc-plugin-0.5.0.tar.bz2: 8d3ea69a64c13462582590f9274ba7c3c2658eb7
