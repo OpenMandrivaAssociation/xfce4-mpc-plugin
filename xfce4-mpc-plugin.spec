@@ -4,14 +4,14 @@
 Summary:	A mpc plugin for the Xfce panel
 Name:		xfce4-mpc-plugin
 Version:	0.5.2
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-mpc-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-mpc-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
-BuildRequires:	exo-devel
+BuildRequires:	pkgconfig(exo-2)
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig(libmpd)
 
@@ -48,6 +48,6 @@ chmod +x %{buildroot}%{_libdir}/xfce4/panel/plugins/*.so
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%doc ChangeLog AUTHORS README
+%doc ChangeLog AUTHORS README*
 %{_libdir}/xfce4/panel/plugins/libmpc.so
 %{_datadir}/xfce4/panel/plugins/xfce4-mpc-plugin.desktop
