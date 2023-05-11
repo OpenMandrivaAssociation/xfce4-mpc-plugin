@@ -48,6 +48,6 @@ chmod +x %{buildroot}%{_libdir}/xfce4/panel/plugins/*.so
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%doc ChangeLog AUTHORS README*
+%doc AUTHORS README*
 %{_libdir}/xfce4/panel/plugins/libmpc.so
 %{_datadir}/xfce4/panel/plugins/xfce4-mpc-plugin.desktop
