@@ -3,12 +3,12 @@
 
 Summary:	A mpc plugin for the Xfce panel
 Name:		xfce4-mpc-plugin
-Version:	0.5.3
+Version:	0.5.5
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-mpc-plugin
-Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-mpc-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
+Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-mpc-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
 BuildRequires:	pkgconfig(exo-2)
@@ -32,7 +32,7 @@ Features :
 * launch configurable client (gmpc, xterm -e ncmpc,..) through right-click menu
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure \
